@@ -2,7 +2,10 @@ node_modules
 dist
 storybook-static
 coverage
+site-dist
 *.tgz
+*.log
+site-*.png
 .env
 .env.*
 !.env.example

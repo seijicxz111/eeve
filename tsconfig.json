@@ -11,6 +11,10 @@
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "paths": {
+      "eeve": ["./src/index.ts"],
+      "eeve/styles.css": ["./src/styles/globals.css"]
+    },
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -19,6 +23,7 @@
   },
   "include": [
     "src",
+    "site",
     "tests",
     ".storybook/**/*.ts",
     "vite.config.ts",

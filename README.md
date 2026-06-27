@@ -1,4 +1,4 @@
-# eeve-ui-components
+# eeve
 
 A production-oriented React component library with strict TypeScript, semantic design tokens, light and dark themes, Storybook documentation, focused tests, and npm-ready packaging.
 
@@ -8,7 +8,7 @@ A production-oriented React component library with strict TypeScript, semantic d
 - CSS custom property token system with light, dark, and custom-theme support
 - Tailwind CSS, Class Variance Authority, `clsx`, and `tailwind-merge`
 - Accessible Radix-backed primitives for complex menus, dialogs, tabs, overlays, and controls
-- Vite library-mode build with ESM, CJS, source maps, extracted CSS, and declarations
+- Vite library-mode build with ESM, source maps, extracted CSS, and declarations
 - Storybook with autodocs, controls, a11y tooling, theme switching, and examples
 - Vitest, React Testing Library, `user-event`, and `jest-axe`
 - Changesets, GitHub Actions, npm release workflow, and Storybook deployment setup
@@ -16,13 +16,13 @@ A production-oriented React component library with strict TypeScript, semantic d
 ## Installation
 
 ```bash
-npm install eeve-ui-components react react-dom
+npm install eeve react react-dom
 ```
 
-The package is prepared for npm publication. Re-check availability before first publish:
+The package is published on npm:
 
 ```bash
-npm view eeve-ui-components name version
+npm view eeve name version
 ```
 
 ## Peer Dependencies
@@ -37,8 +37,8 @@ npm view eeve-ui-components name version
 ## Usage
 
 ```tsx
-import { Button, Dialog, Input, ToastProvider, useToast } from "eeve-ui-components";
-import "eeve-ui-components/styles.css";
+import { Button, Dialog, Input, ToastProvider, useToast } from "eeve";
+import "eeve/styles.css";
 
 function SaveButton() {
   const { toast } = useToast();
@@ -100,11 +100,24 @@ npm run storybook
 npm run build:storybook
 ```
 
+## Showcase Site
+
+The repo includes an MVP marketing and adoption site under `site/`. It demonstrates
+live components, framework integration snippets, design tokens, theme switching, and
+the package value proposition.
+
+```bash
+npm run site:dev
+npm run site:build
+npm run site:preview
+```
+
 ## Development
 
 ```bash
 npm install
 npm run dev
+npm run site:dev
 npm run typecheck
 npm run lint
 npm run test
@@ -137,7 +150,7 @@ Do not run `npm publish` until maintainers explicitly approve the release and re
 
 ## Links
 
-- npm placeholder: `https://www.npmjs.com/package/eeve-ui-components`
+- npm package: `https://www.npmjs.com/package/eeve`
 - Storybook placeholder: `https://your-storybook-domain.example`
 
 ## License

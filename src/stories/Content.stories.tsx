@@ -34,7 +34,7 @@ export const TypographyScale: Story = {
       </Typography>
       <Typography>Body text inherits semantic foreground tokens.</Typography>
       <Typography variant="muted">Muted text is used for supporting metadata.</Typography>
-      <Code>npm install eeve-ui-components</Code>
+      <Code>npm install eeve</Code>
     </div>
   )
 };

@@ -5,7 +5,7 @@ Publishing is intentionally prepared but not executed automatically outside appr
 ## Pre-Publish Checklist
 
 ```bash
-npm view eeve-ui-components name version
+npm view eeve name version
 npm run typecheck
 npm run lint
 npm run test
@@ -25,7 +25,7 @@ mkdir ../ui-components-consumer
 cd ../ui-components-consumer
 npm create vite@latest . -- --template react-ts
 npm install
-npm install ../project_2/eeve-ui-components-0.1.0.tgz
+npm install ../project_2/eeve-0.2.0.tgz
 npm run build
 ```
 

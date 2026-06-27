@@ -25,6 +25,17 @@ describe("Button", () => {
     expect(ref.current).toBeInstanceOf(HTMLButtonElement);
   });
 
+  it("supports polymorphic rendering with asChild", () => {
+    render(
+      <Button asChild>
+        <a href="/docs">Read docs</a>
+      </Button>
+    );
+
+    const link = screen.getByRole("link", { name: "Read docs" });
+    expect(link).toHaveAttribute("href", "/docs");
+  });
+
   it("handles clicks and keyboard activation", async () => {
     const user = userEvent.setup();
     const onClick = vi.fn();

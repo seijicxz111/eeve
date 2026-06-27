@@ -1,6 +1,6 @@
 {
-  "name": "eeve-ui-components",
-  "version": "0.1.0",
+  "name": "eeve",
+  "version": "0.2.0",
   "description": "A typed, accessible React component library and design-system foundation.",
   "type": "module",
   "license": "MIT",
@@ -51,6 +51,9 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "storybook": "storybook dev -p 6006",
+    "site:dev": "vite --config site/vite.config.ts",
+    "site:build": "vite build --config site/vite.config.ts",
+    "site:preview": "vite preview --config site/vite.config.ts",
     "build": "vite build --mode library && node scripts/copy-styles.mjs",
     "build:storybook": "storybook build",
     "typecheck": "tsc --noEmit",

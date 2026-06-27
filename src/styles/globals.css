@@ -4,6 +4,7 @@
 
 @source "../**/*.{ts,tsx,mdx}";
 @source "../../.storybook/**/*.{ts,tsx,mdx}";
+@source "../../site/**/*.{ts,tsx,html}";
 
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *, .dark, .dark *));
 

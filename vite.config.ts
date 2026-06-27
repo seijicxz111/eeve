@@ -21,7 +21,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "EeveUiComponents",
+      name: "Eeve",
       formats: ["es"],
       fileName: () => "index.js",
       cssFileName: "styles"

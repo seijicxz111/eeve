@@ -41,6 +41,9 @@ jobs:
       - name: Storybook build
         run: npm run build:storybook
 
+      - name: Showcase site build
+        run: npm run site:build
+
       - name: Install Playwright browsers
         run: npx playwright install chromium --with-deps
 

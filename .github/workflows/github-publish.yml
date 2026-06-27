@@ -22,10 +22,10 @@ jobs:
         with:
           generate_release_notes: true
           body: |
-            Published to npm as `eeve-ui-components`.
+            Published to npm as `eeve`.
 
             ```bash
-            npm install eeve-ui-components react react-dom
+            npm install eeve react react-dom
             ```
 
   github-package:
@@ -51,7 +51,7 @@ jobs:
 
       - name: Configure GitHub package name
         run: |
-          npm pkg set name=@seijicxz111/eeve-ui-components
+          npm pkg set name=@seijicxz111/eeve
           npm pkg set publishConfig.registry=https://npm.pkg.github.com
 
       - name: Publish to GitHub Packages
