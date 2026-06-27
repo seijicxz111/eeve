@@ -1,4 +1,4 @@
-# @eeve/ui-components
+# eeve-ui-components
 
 ## 0.1.0
 

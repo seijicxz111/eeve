@@ -1,4 +1,4 @@
-# @eeve/ui-components
+# eeve-ui-components
 
 A production-oriented React component library with strict TypeScript, semantic design tokens, light and dark themes, Storybook documentation, focused tests, and npm-ready packaging.
 
@@ -16,13 +16,13 @@ A production-oriented React component library with strict TypeScript, semantic d
 ## Installation
 
 ```bash
-npm install @eeve/ui-components react react-dom
+npm install eeve-ui-components react react-dom
 ```
 
 The package is prepared for npm publication. Re-check availability before first publish:
 
 ```bash
-npm view @eeve/ui-components name version
+npm view eeve-ui-components name version
 ```
 
 ## Peer Dependencies
@@ -37,8 +37,8 @@ npm view @eeve/ui-components name version
 ## Usage
 
 ```tsx
-import { Button, Dialog, Input, ToastProvider, useToast } from "@eeve/ui-components";
-import "@eeve/ui-components/styles.css";
+import { Button, Dialog, Input, ToastProvider, useToast } from "eeve-ui-components";
+import "eeve-ui-components/styles.css";
 
 function SaveButton() {
   const { toast } = useToast();
@@ -137,7 +137,7 @@ Do not run `npm publish` until maintainers explicitly approve the release and re
 
 ## Links
 
-- npm placeholder: `https://www.npmjs.com/package/@eeve/ui-components`
+- npm placeholder: `https://www.npmjs.com/package/eeve-ui-components`
 - Storybook placeholder: `https://your-storybook-domain.example`
 
 ## License
