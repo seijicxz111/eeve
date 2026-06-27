@@ -1,0 +1,19 @@
+name: Feature request
+description: Propose a new component, variant, hook, or design-system capability.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user or maintainer problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the API, behavior, accessibility requirements, and alternatives.
+    validations:
+      required: true

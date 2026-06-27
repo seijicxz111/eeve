@@ -1,0 +1,23 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Design System/Introduction" />
+
+# @eeve/ui-components
+
+This Storybook documents a reusable React component library built around semantic CSS variables, strict TypeScript, accessible primitives, and tree-shakeable package exports.
+
+## Design Philosophy
+
+Components are intentionally composable, modest in visual style, and optimized for product interfaces where density, focus visibility, keyboard access, and predictable APIs matter.
+
+## Tokens And Themes
+
+Theme values are exposed through CSS custom properties. Use `data-theme="light"`, `data-theme="dark"`, or custom token overrides at an application boundary.
+
+## Accessibility
+
+The library targets WCAG 2.2 AA practices where practical. Automated checks are included, but manual keyboard and screen-reader verification remains part of release review.
+
+## Versioning
+
+Changesets drive version bumps and changelog generation. Public API changes should be documented before release.
