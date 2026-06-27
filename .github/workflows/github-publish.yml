@@ -1,0 +1,60 @@
+name: GitHub Publish
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+  packages: write
+
+jobs:
+  release:
+    name: Create GitHub release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          body: |
+            Published to npm as `eeve-ui-components`.
+
+            ```bash
+            npm install eeve-ui-components react react-dom
+            ```
+
+  github-package:
+    name: Publish GitHub Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@seijicxz111"
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Configure GitHub package name
+        run: |
+          npm pkg set name=@seijicxz111/eeve-ui-components
+          npm pkg set publishConfig.registry=https://npm.pkg.github.com
+
+      - name: Publish to GitHub Packages
+        run: npm publish --registry=https://npm.pkg.github.com
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
