@@ -12,8 +12,8 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "paths": {
-      "eeve": ["./src/index.ts"],
-      "eeve/styles.css": ["./src/styles/globals.css"]
+      "@eeve0906/eeve": ["./src/index.ts"],
+      "@eeve0906/eeve/styles.css": ["./src/styles/globals.css"]
     },
     "resolveJsonModule": true,
     "isolatedModules": true,

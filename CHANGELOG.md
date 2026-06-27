@@ -2,7 +2,7 @@
 
 ## 0.2.0
 
-Renamed the public package to `eeve`, added the MVP showcase site, added the Eeve moon icon, and fixed polymorphic `Button` rendering with `asChild`.
+Renamed the public product to `eeve`, moved the npm package to `@eeve0906/eeve` after npm blocked the unscoped name through its similarity policy, added the MVP showcase site, added the Eeve moon icon, and fixed polymorphic `Button` rendering with `asChild`.
 
 ## 0.1.0
 

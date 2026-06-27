@@ -16,14 +16,18 @@ A production-oriented React component library with strict TypeScript, semantic d
 ## Installation
 
 ```bash
-npm install eeve react react-dom
+npm install @eeve0906/eeve react react-dom
 ```
 
 The package is published on npm:
 
 ```bash
-npm view eeve name version
+npm view @eeve0906/eeve name version
 ```
+
+The product name is `eeve`; the npm package uses the scoped name `@eeve0906/eeve`
+because npm blocks the unscoped `eeve` identifier through its package-name
+similarity policy.
 
 ## Peer Dependencies
 
@@ -37,8 +41,8 @@ npm view eeve name version
 ## Usage
 
 ```tsx
-import { Button, Dialog, Input, ToastProvider, useToast } from "eeve";
-import "eeve/styles.css";
+import { Button, Dialog, Input, ToastProvider, useToast } from "@eeve0906/eeve";
+import "@eeve0906/eeve/styles.css";
 
 function SaveButton() {
   const { toast } = useToast();
@@ -150,7 +154,7 @@ Do not run `npm publish` until maintainers explicitly approve the release and re
 
 ## Links
 
-- npm package: `https://www.npmjs.com/package/eeve`
+- npm package: `https://www.npmjs.com/package/@eeve0906/eeve`
 - Storybook placeholder: `https://your-storybook-domain.example`
 
 ## License

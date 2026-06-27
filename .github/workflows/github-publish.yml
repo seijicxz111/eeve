@@ -22,10 +22,10 @@ jobs:
         with:
           generate_release_notes: true
           body: |
-            Published to npm as `eeve`.
+            Published to npm as `@eeve0906/eeve`.
 
             ```bash
-            npm install eeve react react-dom
+            npm install @eeve0906/eeve react react-dom
             ```
 
   github-package:

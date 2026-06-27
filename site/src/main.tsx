@@ -1,4 +1,4 @@
-import "eeve/styles.css";
+import "@eeve0906/eeve/styles.css";
 import "./site.css";
 
 import * as React from "react";

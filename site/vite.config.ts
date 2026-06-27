@@ -9,8 +9,8 @@ export default defineConfig({
   root: "site",
   resolve: {
     alias: {
-      "eeve/styles.css": resolve(__dirname, "../src/styles/globals.css"),
-      "eeve": resolve(__dirname, "../src/index.ts")
+      "@eeve0906/eeve/styles.css": resolve(__dirname, "../src/styles/globals.css"),
+      "@eeve0906/eeve": resolve(__dirname, "../src/index.ts")
     }
   },
   build: {

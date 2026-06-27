@@ -25,7 +25,7 @@ import {
   ToastProvider,
   Tooltip,
   useToast
-} from "eeve";
+} from "@eeve0906/eeve";
 import * as React from "react";
 
 type ThemeMode = "light" | "dark";
@@ -36,10 +36,10 @@ const frameworkSnippets = [
     label: "React",
     content: (
       <CodeBlock
-        code={`npm install eeve react react-dom
+        code={`npm install @eeve0906/eeve react react-dom
 
-import { Button, ToastProvider } from "eeve";
-import "eeve/styles.css";
+import { Button, ToastProvider } from "@eeve0906/eeve";
+import "@eeve0906/eeve/styles.css";
 
 export function App() {
   return (
@@ -57,12 +57,12 @@ export function App() {
     content: (
       <CodeBlock
         code={`// app/layout.tsx
-import "eeve/styles.css";
+import "@eeve0906/eeve/styles.css";
 
 // app/components/settings-panel.tsx
 "use client";
 
-import { Dialog, Input, Switch } from "eeve";
+import { Dialog, Input, Switch } from "@eeve0906/eeve";
 
 export function SettingsPanel() {
   return (
@@ -82,13 +82,13 @@ export function SettingsPanel() {
       <CodeBlock
         code={`npm create vite@latest dashboard -- --template react-ts
 cd dashboard
-npm install eeve
+npm install @eeve0906/eeve
 
 // src/main.tsx
-import "eeve/styles.css";
+import "@eeve0906/eeve/styles.css";
 
 // src/App.tsx
-import { Card, StatCard, Tabs } from "eeve";`}
+import { Card, StatCard, Tabs } from "@eeve0906/eeve";`}
       />
     )
   },
@@ -199,14 +199,14 @@ function ShowcaseShell({
               </a>
               <a
                 className="site-button site-button-lg site-button-outline"
-                href="https://www.npmjs.com/package/eeve"
+                href="https://www.npmjs.com/package/@eeve0906/eeve"
               >
                 View npm package
               </a>
             </div>
             <div className="install-command" aria-label="Install command">
               <span>npm install</span>
-              <strong>eeve</strong>
+              <strong>@eeve0906/eeve</strong>
             </div>
           </div>
           <HeroWorkbench />
